@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
 def return_evens(num_list):
-    pass
+    even_nums = [num for num in num_list if num % 2 == 0]
+    return (even_nums if even_nums else [])
+    
+
 
 def make_exclamation(sentence_list):
-    pass
+    exclamation = [(sentence + "!") for sentence in sentence_list]
+    return exclamation
